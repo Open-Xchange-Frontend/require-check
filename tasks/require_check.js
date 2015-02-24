@@ -46,6 +46,7 @@ module.exports = function(grunt) {
 
         processContent = function (filepath) {
             var content = grunt.file.read(filepath);
+            content = content.replace(/(\/\*[\w\'\s\r\n\*]*\*\/)|(\/\/[\w\s\']*)|(\<![\-\-\s\w\>\/]*\>)/g, '');
             if (options.define) processDefines(content, filepath);
             if (options.require) processRequires(content, filepath);
         },
