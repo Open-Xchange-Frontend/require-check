@@ -1,7 +1,7 @@
 {
   "name": "grunt-require-check",
   "description": "Grunt plugin to check existence of required files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/Open-Xchange-Frontend/require-check",
   "author": {
     "name": "David Bauer",
